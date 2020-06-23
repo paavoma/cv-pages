@@ -1,0 +1,3 @@
+.OddGray:nth-child(odd) {
+    background-color: gray;
+}
