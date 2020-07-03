@@ -5,12 +5,26 @@
     },
    
     {
-      "Title": "Projects",
-      "Content": "Liirumlaarum 2"
-    },
-   
-    {
       "Title": "Skills",
-      "Content": "Liirumlaarum 3"
+      "Content": [
+        {
+          "lineId" : 1,
+          "tag" : "ul",
+          "value" : ["Java", "MySQL", "Audio Design", "JavaScript", "Agile", "HTML/CSS"]
+        },
+
+        { 
+          "lineId" : 2,
+          "tag" : "p",
+          "value" : "Tässä on leipätekstiä jännään väliin"
+        },
+        {
+          "lineId" : 3,
+          "tag" : "h1",
+          "value" : "Alaotsikko"
+        }
+      ]
     }
+   
+    
 ]

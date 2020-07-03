@@ -4,6 +4,7 @@ import contentData from '../../assets/content.json';
 import Aux from '../../hoc/Auxil';
 import About from '../../components/About/About';
 import Projects from '../../components/Projects/Projects';
+import Skills from '../../components/Skills/Skills';
 import classes from './CvMain.module.css';
 
 class CvMain extends Component {
@@ -26,6 +27,7 @@ class CvMain extends Component {
     render() {
         const aboutElement = this.findElementWithTitle("About");
         const projectsElement = this.findElementWithTitle("Projects");
+        const skillsElement = this.findElementWithTitle("Skills");
         
         return (
             <Aux>
@@ -34,12 +36,10 @@ class CvMain extends Component {
                 </div>
 
                 <div className={classes.OddGray}>
-                <Projects title={projectsElement[0]} content={projectsElement[1]}/>
+                <Skills title={skillsElement[0]} content={skillsElement[1]}/>
                 </div>
 
-                <div className={classes.OddGray}>
-                <Projects title={projectsElement[0]} content={projectsElement[1]}/>
-                </div>
+                
                 
             </Aux>
         );
