@@ -1,4 +1,9 @@
+body {
+    background: #DBDABC;
+}
+
 .OddGray:nth-child(odd) {
-    background-color:lightgray;
+    background: #215b83;
+    color: #DBDABC;
 }
 

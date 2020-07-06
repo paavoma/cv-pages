@@ -34,7 +34,7 @@ class CvMain extends Component {
         return (
             <Aux>
                 <div className={classes.OddGray}>
-                <About title={contactElement[0]} content={contactElement[1]}/>
+                <Contact title={contactElement[0]} content={contactElement[1]}/>
                 </div>
 
                 <div className={classes.OddGray}>

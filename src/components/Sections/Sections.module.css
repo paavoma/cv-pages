@@ -1,4 +1,36 @@
 .Content {
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-left: 25%;
     margin-right: 25%;
+}
+
+@media only screen and (max-width: 900px) {
+    .Content {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+  }
+
+.Gfg { 
+    width:auto; 
+    text-align:right; 
+    padding:20px;
+    align-content: right;
+} 
+img { 
+    object-fit: contain;
+    max-width: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    min-width: 150px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    
+    
+}
+
+.Contact {
+    align-items: center;
 }

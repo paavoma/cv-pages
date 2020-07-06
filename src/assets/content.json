@@ -114,12 +114,7 @@
     {
       "Title": "Paavo Mattila",
       "Content": [
-        {
-          "lineId" : 1,
-          "tag" : "h2",
-          "value" : "Software Developer / Audio Designer"
-        },
-
+        
         { 
           "lineId" : 2,
           "tag" : "email",
