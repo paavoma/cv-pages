@@ -1,7 +1,35 @@
 .Inactive {
     display: none;
   }
-  .Active {
+
+.Active {
     display: block;
   }
+
+  .Slider{
+    display: flex;
+    
+}
+
+.LeftArrowTd {
   
+  vertical-align:middle;
+}
+
+.RightArrowTd {
+  
+  vertical-align:middle;
+}
+.Table {
+  width: 100%;
+  height: 250px;
+  vertical-align:middle;
+}
+.ContentTd{
+  width: 90%;
+  height: 100%;
+  vertical-align:middle;
+}
+.TrSlide{
+  height: 100%;
+}

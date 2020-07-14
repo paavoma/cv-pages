@@ -16,8 +16,8 @@ const htmlTagBuilder = (props) => {
 
       return (
         <ul>
-          {props.line.value.map((value) =>
-            <li key={value}>{value}</li>)}
+          {props.line.value.map((value, index) =>
+            <li key={index}>{value}</li>)}
         </ul>
       )
 

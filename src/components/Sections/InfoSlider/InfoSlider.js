@@ -1,6 +1,6 @@
 import React from 'react';
 import HtmlTagBuilder from '../HtmlTagBuilder/HtmlTagBuilder';
-import classes from '../Sections.module.css';
+import classes from './InfoSlider.module.css';
 import Slider from '../../../containers/Slider/Slider';
 
 

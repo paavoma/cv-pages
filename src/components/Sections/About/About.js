@@ -1,7 +1,6 @@
 import React from 'react';
 import HtmlTagBuilder from '../HtmlTagBuilder/HtmlTagBuilder';
 import classes from '../Sections.module.css';
-import Slider from '../../../containers/Slider/Slider';
 
 
 const about = (props) => {
@@ -9,8 +8,8 @@ const about = (props) => {
         <div className={classes.Content}>
             <h1>{props.title}</h1>
 
-            {props.content.map((line) => {
-                return <HtmlTagBuilder line={line} />;
+            {props.content.map((line, index) => {
+                return <HtmlTagBuilder line={line} key={index} />;
             }
             )}
           

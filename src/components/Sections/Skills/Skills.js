@@ -10,8 +10,8 @@ const skills = (props) => {
     <div className={classes.Content}>
       <h1>{props.title}</h1>
 
-      {props.content.map((line) => {
-        return <HtmlTagBuilder line={line}/>;
+      {props.content.map((line,index) => {
+        return <HtmlTagBuilder line={line} key={index}/>;
       }
       )}
 

@@ -1,8 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Slide from '../Slide/Slide';
 import LeftPointer from '../../components/Carousel/Arrows/LeftPointer';
 import RightPointer from '../../components/Carousel/Arrows/RightPointer';
 import slideData from '../../data/slideData';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import classes from './Slider.module.css';
 
 
 
@@ -18,9 +20,10 @@ class Slider extends Component {
 
     componentWillMount() {
         this.setState({
-          length: this.props.elements.length
+            length: this.props.elements.length
         })
-      }
+
+    }
 
     changePrevSlide() {
         let index = this.state.activeIndex;
@@ -53,23 +56,39 @@ class Slider extends Component {
 
     render() {
         console.log(this.props.elements);
+        console.log("Slide length is " + this.state.length)
+        console.log("Currently active index" + this.state.activeIndex)
         return (
-            
+
             <div className='slider'>
+
                 <div className='slider-items'>
-                    <LeftPointer
-                        changePrevSlide={() => this.changePrevSlide()}
-                    />
-                    <div className='slider-text'>
-                        <Slide
-                            activeIndex={this.state.activeIndex}
-                            elements={this.props.elements}
-                        />
-                    </div>
-                    <RightPointer
-                        changeNextSlide={() => this.changeNextSlide()}
-                    />
+                    <table className={classes.Table}>
+                        <tr className={classes.TrSlide}>
+                            <td className={classes.LeftArrowTd} >
+                                <LeftPointer
+                                    changePrevSlide={() => this.changePrevSlide()}
+                                />
+                            </td>
+                            <td className={classes.ContentTd}>
+                                <div className='slider-text'>
+                                    <Slide
+                                        activeIndex={this.state.activeIndex}
+                                        elements={this.props.elements}
+                                    />
+                                </div>
+                            </td>
+
+                            <td className={classes.RightArrowTd} >
+                                <RightPointer
+                                    changeNextSlide={() => this.changeNextSlide()}
+                                />
+                            </td>
+                        </tr>
+                    </table>
+
                 </div>
+
             </div>
         );
     }

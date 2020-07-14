@@ -32,12 +32,21 @@ class CvMain extends Component {
         const skillsElement = this.findElementWithTitle("Skills");
         const contactElement = this.findElementWithTitle("Paavo Mattila");
 
-        const sliderElements = [aboutElement, skillsElement, contactElement];
+        const sliderElements = [aboutElement, skillsElement];
         
+        console.log("Elements to be sent " + sliderElements[0][1]);
         return (
             <Aux>
                 <div className={classes.OddGray}>
                 <Contact title={contactElement[0]} content={contactElement[1]}/>
+                </div>
+
+                <div className={classes.OddGray}>
+                <InfoSlider elements={sliderElements}/>
+                </div>
+
+                <div className={classes.OddGray}>
+                <Projects title={projectsElement[0]} content={projectsElement[1]}/>
                 </div>
 
                 <div className={classes.OddGray}>
@@ -48,13 +57,7 @@ class CvMain extends Component {
                 <Skills title={skillsElement[0]} content={skillsElement[1]}/>
                 </div>
 
-                <div className={classes.OddGray}>
-                <Projects title={projectsElement[0]} content={projectsElement[1]}/>
-                </div>
-
-                <div className={classes.OddGray}>
-                <InfoSlider elements={sliderElements}/>
-                </div>
+                
                 
             </Aux>
         );

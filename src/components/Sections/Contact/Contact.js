@@ -29,8 +29,8 @@ const contact = (props) => {
 
                 </Row>
                 <Row middle="xs" >
-                        {props.content.map((line) => {
-                            return <Col xs> <HtmlTagBuilder line={line} /> </Col>;
+                        {props.content.map((line, index) => {
+                            return <Col xs key={index}> <HtmlTagBuilder line={line} /> </Col>;
                         }
                         )}
                         
