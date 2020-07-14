@@ -4,7 +4,7 @@ I got tired of writing my cv/resume into multiple different platforms, such as w
 start developing a single web page that can be updated by uploading my .pdf resume to a parser that fills a form that is sent to a SQL
 database. When finished, this app should fill the web page with the content that was gathered with GET request from the database via Node.js.
 
-This is also my first practice project with React.
+This is also my first practise project with React.
 
 ## Current state
 
