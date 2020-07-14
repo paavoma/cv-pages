@@ -7,6 +7,7 @@ import Projects from '../../components/Sections/Projects/Projects';
 import Skills from '../../components/Sections/Skills/Skills';
 import Contact from '../../components/Sections/Contact/Contact';
 import classes from './CvMain.module.css';
+import InfoSlider from '../../components/Sections/InfoSlider/InfoSlider';
 
 class CvMain extends Component {
     constructor() {
@@ -30,6 +31,8 @@ class CvMain extends Component {
         const projectsElement = this.findElementWithTitle("Projects");
         const skillsElement = this.findElementWithTitle("Skills");
         const contactElement = this.findElementWithTitle("Paavo Mattila");
+
+        const sliderElements = [aboutElement, skillsElement, contactElement];
         
         return (
             <Aux>
@@ -49,7 +52,9 @@ class CvMain extends Component {
                 <Projects title={projectsElement[0]} content={projectsElement[1]}/>
                 </div>
 
-                
+                <div className={classes.OddGray}>
+                <InfoSlider elements={sliderElements}/>
+                </div>
                 
             </Aux>
         );

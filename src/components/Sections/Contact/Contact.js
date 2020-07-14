@@ -3,42 +3,40 @@ import HtmlTagBuilder from '../HtmlTagBuilder/HtmlTagBuilder';
 import classes from '../Sections.module.css';
 import imageMe from '../../../assets/me2.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import githubImg from '../../../assets/GitHub_Logo_White.png';
+import gitlabImg from '../../../assets/gitlab-logo-1-color-white-rgb.png';
+import linkedinImg from '../../../assets/Logo-White-128px-TM.png'
 
 
 const contact = (props) => {
+    const imageUrls = [githubImg, gitlabImg, linkedinImg];
+    console.log(imageUrls[2]);
     return (
         <div className={classes.Content}>
 
             <Grid className={classes.Contact}>
-                <Row middle="xs">
+                <Row between="xs">
                     <Col xs>
                         <h1>{props.title}</h1>
 
                         <h2>Software Developer / Audio Designer</h2>
 
                     </Col>
-
-                    <div>
-                        <Col xs>
-
-                        
-
-                        </Col>
-                    </div>
+                    <Col xs/>
                     <Col xs>
-                        <img src={imageMe} />
+                        <img src={imageMe} className={classes.ImageMe} />
                     </Col>
 
+                </Row>
+                <Row middle="xs" >
+                        {props.content.map((line) => {
+                            return <Col xs> <HtmlTagBuilder line={line} /> </Col>;
+                        }
+                        )}
+                        
+                </Row>
 
-                </Row>
-                <Row>
-                    
-                    {props.content.map((line) => {
-                                return <Col xs> <HtmlTagBuilder line={line} /> </Col>;
-                            }
-                            )}
-                    
-                </Row>
+
 
 
             </Grid>

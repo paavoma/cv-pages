@@ -114,11 +114,10 @@
     {
       "Title": "Paavo Mattila",
       "Content": [
-        
-        { 
-          "lineId" : 2,
-          "tag" : "email",
-          "value" : "paavo.mattila(at)metropolia.fi"
+        {
+          "lineId" : 5,
+          "tag" : "linkedin",
+          "value" : "https://www.linkedin.com/in/paavomattila/"
         },
         {
           "lineId" : 3,
@@ -129,12 +128,8 @@
           "lineId" : 4,
           "tag" : "gitlab",
           "value" : "https://gitlab.com/paavoma/"
-        },
-        {
-          "lineId" : 5,
-          "tag" : "linkedin",
-          "value" : "https://www.linkedin.com/in/paavomattila/"
         }
+        
         ]
     }
 

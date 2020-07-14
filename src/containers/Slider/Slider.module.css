@@ -1,0 +1,7 @@
+.Inactive {
+    display: none;
+  }
+  .Active {
+    display: block;
+  }
+  

@@ -4,16 +4,10 @@ import classes from '../Sections.module.css';
 import Slider from '../../../containers/Slider/Slider';
 
 
-const about = (props) => {
+const InfoSlider = (props) => {
     return (
         <div className={classes.Content}>
-            <h1>{props.title}</h1>
-
-            {props.content.map((line) => {
-                return <HtmlTagBuilder line={line} />;
-            }
-            )}
-          
+            <Slider elements={props.elements}/>
         </div>
     );
 
@@ -21,4 +15,4 @@ const about = (props) => {
 
 };
 
-export default about;
+export default InfoSlider;
