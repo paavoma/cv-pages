@@ -1,3 +1,18 @@
+# Personal cv pages
+
+I got tired of writing my cv/resume into multiple different platforms, such as web pages and pdf files and decided to
+start developing a single web page that can be updated by uploading my .pdf resume to a parser that fills a form that is sent to a SQL
+database. When finished, this app should fill the web page with the content that was gathered with GET request from the database via Node.js.
+
+This is also my first practice project with React.
+
+## Current state
+
+At it's current state app loads it's data from a local js file that is structured the same way as the requested JSON would be.
+It has some css styling and state manipulation via text/image carousel. Content is passed from the Cvmain containers state to different sections via props.
+
+-----------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
