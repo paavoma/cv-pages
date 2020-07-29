@@ -60,9 +60,9 @@ class Slider extends Component {
         console.log("Currently active index" + this.state.activeIndex)
         return (
 
-            <div className='slider'>
+            <div className={classes.Sliderdiv}>
 
-                <div className='slider-items'>
+                <div className={classes.Slideritems}>
                     <table className={classes.Table}>
                         <tr className={classes.TrSlide}>
                             <td className={classes.LeftArrowTd} >

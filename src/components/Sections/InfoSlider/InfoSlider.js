@@ -7,6 +7,7 @@ import Slider from '../../../containers/Slider/Slider';
 const InfoSlider = (props) => {
     return (
         <div className={classes.Content}>
+            
             <Slider elements={props.elements}/>
         </div>
     );

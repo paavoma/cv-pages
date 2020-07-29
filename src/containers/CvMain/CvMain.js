@@ -25,16 +25,19 @@ class CvMain extends Component {
         return item = list.find(item=>item[0]== title);
         
     }
+    
 
     render() {
         const aboutElement = this.findElementWithTitle("About");
-        const projectsElement = this.findElementWithTitle("Projects");
+        
         const skillsElement = this.findElementWithTitle("Skills");
         const contactElement = this.findElementWithTitle("Paavo Mattila");
+        const projectsElement = this.findElementWithTitle("Projects");
+        
 
         const sliderElements = [aboutElement, skillsElement];
         
-        console.log("Elements to be sent " + sliderElements[0][1]);
+        console.log("Elements to be sent " + projectsElement);
         return (
             <Aux>
                 <div className={classes.OddGray}>
@@ -42,15 +45,11 @@ class CvMain extends Component {
                 </div>
 
                 <div className={classes.OddGray}>
-                <InfoSlider elements={sliderElements}/>
-                </div>
-
-                <div className={classes.OddGray}>
-                <Projects title={projectsElement[0]} content={projectsElement[1]}/>
-                </div>
-
-                <div className={classes.OddGray}>
                 <About title={aboutElement[0]} content={aboutElement[1]}/>
+                </div>
+
+                <div className={classes.OddGray}>
+                <InfoSlider title={projectsElement[0]} elements={projectsElement[1]}/>
                 </div>
 
                 <div className={classes.OddGray}>

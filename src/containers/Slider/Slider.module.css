@@ -19,11 +19,13 @@
 .RightArrowTd {
   
   vertical-align:middle;
+  text-align: right;
 }
 .Table {
-  width: 100%;
-  height: 250px;
+  width: 50%;
+  min-height: 600px;
   vertical-align:middle;
+  background-color: white;
 }
 .ContentTd{
   width: 90%;
@@ -32,4 +34,22 @@
 }
 .TrSlide{
   height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .Table {
+    width: 100%;
+    min-height: 600px;
+    vertical-align:middle;
+    background-color: white;
+  }
+}
+.Sliderdiv {
+  
+}
+.Slideritems {
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  
 }

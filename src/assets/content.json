@@ -25,90 +25,98 @@
       "Title": "Projects",
       "Content": [
         {
-          "lineId" : 1,
-          "tag" : "h2",
-          "value" : "GameTrain: Ohjelmistotuotanto projekti, Metropolia AMK"
-        },
-
-        { 
-          "lineId" : 2,
-          "tag" : "i",
-          "value" : "08/2019 - 12/2019\t\t(4 months)"
-        },
-        {
-          "lineId" : 3,
-          "tag" : "p",
-          "value" : "In this project we learned how Agile development works by designing and implementing our own Java desktop software in a small group. We chose to create an app for gamers to monitor their skill progression, via statistics and charts. New essential technologies that we learned during the project were: Java with Maven and Hibernate (MySQL, MariaDB), Jenkins and Continuous Integration, use of external API’s with JSON and localization."
-        },
-        {
-          "lineId" : 4,
-          "tag" : "link",
-          "value" : "https://gitlab.com/paavoma/game-train/"
-        },
-
-        {
-          "lineId" : 5,
-          "tag" : "h2",
-          "value" : "Audio design for a mobile game: BvB Racing (iOS) by Tuokio"
-        },
-
-        { 
-          "lineId" : 6,
-          "tag" : "i",
-          "value" : "05/2011 - 04/2012\t(1 year 1 month)"
+          "projectId" : 1,
+          "projectContent" : [
+            
+              {
+                "tag" : "h2",
+                "value" : "GameTrain: Ohjelmistotuotanto projekti, Metropolia AMK"
+              },
+      
+              { 
+                "tag" : "i",
+                "value" : "08/2019 - 12/2019\t\t(4 months)"
+              },
+              {
+                "tag" : "p",
+                "value" : "In this project we learned how Agile development works by designing and implementing our own Java desktop software in a small group. We chose to create an app for gamers to monitor their skill progression, via statistics and charts. New essential technologies that we learned during the project were: Java with Maven and Hibernate (MySQL, MariaDB), Jenkins and Continuous Integration, use of external API’s with JSON and localization."
+              },
+              {
+                "tag" : "link",
+                "value" : "https://gitlab.com/paavoma/game-train/"
+              }
+          ]
         },
         {
-          "lineId" : 7,
-          "tag" : "p",
-          "value" : "All audio design and implementation along with all the recording, voice acting and composing in close co-operation with Tuokio’s dev team. For this project I had some out of the box ideas like using human voice only to make all the car engine sounds."
+          "projectId" : 2,
+          "projectContent" : [
+            
+            {
+              "tag" : "h2",
+              "value" : "Audio design for a mobile game: BvB Racing (iOS) by Tuokio"
+            },
+    
+            { 
+              "tag" : "i",
+              "value" : "05/2011 - 04/2012\t(1 year 1 month)"
+            },
+            {
+              "tag" : "p",
+              "value" : "All audio design and implementation along with all the recording, voice acting and composing in close co-operation with Tuokio’s dev team. For this project I had some out of the box ideas like using human voice only to make all the car engine sounds."
+            },
+            {
+              "tag" : "link",
+              "value" : "https://www.youtube.com/watch?v=BmAWd-xV6Ew"
+            }
+          ]
         },
         {
-          "lineId" : 8,
-          "tag" : "link",
-          "value" : "https://www.youtube.com/watch?v=BmAWd-xV6Ew"
+          "projectId" : 3,
+          "projectContent" : [
+            
+            {
+              "tag" : "h2",
+              "value" : "Theme song for Teräspelaaja-award sponsored by Lindab"
+            },
+    
+            { 
+              "tag" : "i",
+              "value" : "01/2015\t\t(1 month)"
+            },
+            {
+              "tag" : "p",
+              "value" : "Designed and composed a theme song for a hockey/football team award. The customer wanted an epic sounding (Dark Knight, Gladiator) movie soundtrack theme."
+            },
+            {
+              "tag" : "link",
+              "value" : "https://www.youtube.com/watch?v=jZ1etJu6MBQ"
+            }
+          ]
         },
         {
-          "lineId" : 9,
-          "tag" : "h2",
-          "value" : "Theme song for Teräspelaaja-award sponsored by Lindab"
-        },
-
-        { 
-          "lineId" : 10,
-          "tag" : "i",
-          "value" : "01/2015\t\t(1 month)"
-        },
-        {
-          "lineId" : 11,
-          "tag" : "p",
-          "value" : "Designed and composed a theme song for a hockey/football team award. The customer wanted an epic sounding (Dark Knight, Gladiator) movie soundtrack theme."
-        },
-        {
-          "lineId" : 12,
-          "tag" : "link",
-          "value" : "https://www.youtube.com/watch?v=jZ1etJu6MBQ"
-        },
-        {
-          "lineId" : 13,
-          "tag" : "h2",
-          "value" : "Lotta Sandholm - From Good To Bad, Idols (Finland) finalist 2011"
-        },
-
-        { 
-          "lineId" : 14,
-          "tag" : "i",
-          "value" : "04/2014 - 06/2014\t\t(3 months)"
-        },
-        {
-          "lineId" : 15,
-          "tag" : "p",
-          "value" : "Produced and co-wrote a self-published single together with the artist."
-        },
-        {
-          "lineId" : 16,
-          "tag" : "link",
-          "value" : "https://www.youtube.com/watch?v=c4haZBW5AUg"
+          "projectId" : 4,
+          "projectContent" : [
+            
+            {
+              "tag" : "h2",
+              "value" : "Lotta Sandholm - From Good To Bad, Idols (Finland) finalist 2011"
+            },
+    
+            { 
+              "tag" : "i",
+              "value" : "04/2014 - 06/2014\t\t(3 months)"
+            },
+            {
+              "tag" : "p",
+              "value" : "Produced and co-wrote a self-published single together with the artist."
+            },
+            {
+              "tag" : "link",
+              "value" : "https://www.youtube.com/watch?v=c4haZBW5AUg"
+            }
+          ]
         }
+          
       ]
     },
     {

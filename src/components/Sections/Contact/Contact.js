@@ -10,7 +10,7 @@ import linkedinImg from '../../../assets/Logo-White-128px-TM.png'
 
 const contact = (props) => {
     const imageUrls = [githubImg, gitlabImg, linkedinImg];
-    console.log(imageUrls[2]);
+    
     return (
         <div className={classes.Content}>
 

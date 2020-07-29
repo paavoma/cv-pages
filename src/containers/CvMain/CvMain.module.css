@@ -6,4 +6,7 @@ body {
     background: #215b83;
     color: #DBDABC;
 }
+p, ul {
+    font-size: medium;
+}
 

@@ -21,33 +21,35 @@ class Slide extends Component {
     getHtmlLines(lines) {
 
         return (
-            lines.map((line, index) => {
+            lines.projectContent.map((line, index) => {
+                console.log("html builderiin menevä line " + line[1])
                 return <HtmlTagBuilder line={line} key={index} />
             }
             )
         )
     }
     render() {
-        console.log("Loaded to slide: " + this.props.elements);
 
         console.log("Currently active index in slide " + this.state.activeIndex);
         return (
             <section>
                 {
-                    this.props.elements.map((s, index) => {
-                        let lines = s[1];
-                        let finalLines = this.getHtmlLines(lines);
+                    this.props.elements.map((project, indexDiv) => {
+                        console.log("slideriin luettava" + project);
+                    
                         
-
                         return (
-                            <div className={index === this.props.activeIndex ? classes.Active : classes.Inactive} key={index}>
-                                <h1>{s[0]}</h1>
-                                {finalLines}
-
-
-
-                            </div>
+                        <div className={indexDiv === this.props.activeIndex ? classes.Active : classes.Inactive} key={indexDiv}>
+                        { project.projectContent.map (line => {
+                            return <HtmlTagBuilder line={line}/>;
+                        }
+            
                         )
+                        }
+                        </div>
+                        )   
+                            
+                        
                     }
                     )}
             </section>
