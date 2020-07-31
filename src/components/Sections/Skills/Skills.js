@@ -1,6 +1,7 @@
 import React from 'react';
-import HtmlTagBuilder from '../HtmlTagBuilder/HtmlTagBuilder';
 import classes from '../Sections.module.css';
+import SmallInfoCard from '../../UI/SmallInfoCard';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 
 const skills = (props) => {
@@ -8,18 +9,31 @@ const skills = (props) => {
 
   return (
     <div className={classes.Content}>
-      <h1>{props.title}</h1>
+        <div className={classes.SkillCardContainer}>
+          
+            
+            {props.content.map((card, index) => {
+                  return (
+                    <div className={classes.SkillCardDiv}>
+                      
+                      <SmallInfoCard content={card} index={index}></SmallInfoCard>
+                      
+                    </div>
+                 );
+                }
+                )
+            }
+              
 
-      {props.content.map((line,index) => {
-        return <HtmlTagBuilder line={line} key={index}/>;
-      }
-      )}
-
+        </div>
+        
 
     </div>
   );
 
 
 };
+
+
 
 export default skills;

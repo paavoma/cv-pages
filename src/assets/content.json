@@ -13,10 +13,30 @@
     {
       "Title": "Skills",
       "Content": [
+        
         {
           "lineId" : 1,
-          "tag" : "ul",
-          "value" : ["Java", "MySQL", "Audio Design", "JavaScript", "Agile", "HTML/CSS"]
+          "title": "Languages/frameworks",
+          "tag" : "infoCard",
+          "value" : ["Java", "SQL", "JavaScript", "React", "Agile", "HTML/CSS", "Python", "Node.js"]
+        },
+        {
+          "lineId" : 2,
+          "title": "Programming techs",
+          "tag" : "infoCard",
+          "value" : ["Agile", "JSON", "Continuous Integration", "Composing", "Maven", "REST"]
+        },
+        {
+          "lineId" : 3,
+          "title": "Audio",
+          "tag" : "infoCard",
+          "value" : ["Pro Tools", "Logic", "DSP", "Game audio", "Composing"]
+        },
+        {
+          "lineId" : 4,
+          "title": "Media",
+          "tag" : "infoCard",
+          "value" : ["Photoshop", "Adobe: Premiere", "Gimp"]
         }
       ]
     },

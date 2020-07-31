@@ -3,6 +3,7 @@ import classes from '../Sections.module.css';
 import githubImg from '../../../assets/GitHub_Logo_White.png';
 import gitlabImg from '../../../assets/gitlab-logo-1-color-white-rgb.png';
 import linkedinImg from '../../../assets/Logo-White-128px-TM.png'
+import Auxil from '../../../hoc/Auxil';
 
 const htmlTagBuilder = (props) => {
 
@@ -11,6 +12,18 @@ const htmlTagBuilder = (props) => {
 
     case 'p':
       return <p>{props.line.value}</p>
+
+    case 'infoCard':
+      return (
+        <Auxil>
+        <p><b>{props.line.title}</b></p>
+        <ul>
+          {props.line.value.map((value, index) =>
+            <li key={index}>{value}</li>)}
+        </ul>
+        </Auxil>
+        
+      )
 
     case 'ul':
 

@@ -1,0 +1,10 @@
+.CardContainer {
+    background-color:white;
+    height: 95%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.50);
+    
+}
+.CardContent {
+    
+   padding:20px;
+}

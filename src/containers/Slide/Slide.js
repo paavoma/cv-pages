@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
-import slideData from '../../data/slideData';
+
 import classes from '../Slider/Slider.module.css';
 import HtmlTagBuilder from '../../components/Sections/HtmlTagBuilder/HtmlTagBuilder';
 
 class Slide extends Component {
     constructor(props) {
         super(props);
-        this.state = { data: slideData };
-    }
-
-    componentWillMount() {
-        this.setState({
-            data: slideData,
-        })
-
-
+        
     }
 
 
@@ -29,8 +21,6 @@ class Slide extends Component {
         )
     }
     render() {
-
-        console.log("Currently active index in slide " + this.state.activeIndex);
         return (
             <section>
                 {

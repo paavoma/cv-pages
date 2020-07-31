@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Slide from '../Slide/Slide';
 import LeftPointer from '../../components/Carousel/Arrows/LeftPointer';
 import RightPointer from '../../components/Carousel/Arrows/RightPointer';
-import slideData from '../../data/slideData';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import classes from './Slider.module.css';
 
@@ -55,9 +54,6 @@ class Slider extends Component {
     }
 
     render() {
-        console.log(this.props.elements);
-        console.log("Slide length is " + this.state.length)
-        console.log("Currently active index" + this.state.activeIndex)
         return (
 
             <div className={classes.Sliderdiv}>
