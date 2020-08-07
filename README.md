@@ -9,8 +9,9 @@ This is also my first practise project with React.
 
 ## Current state
 
-At it's current state app loads it's data from a local js file that is structured the same way as the requested JSON would be.
-It has some css styling and state manipulation via text/image carousel. Content is passed from the Cvmain containers state to different sections via props.
+The page content is loaded from a JSON file that is recieved with a GET request from https://cv-pages-backend.herokuapp.com/alldat .
+
+Backend: node.js with postgresql database, deployed with heroku.
 
 -----------------------------------------
 
