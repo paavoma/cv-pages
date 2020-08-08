@@ -5,13 +5,15 @@ I got tired of writing my cv/resume into multiple different platforms, such as w
 start developing a single web page that can be updated by uploading my .pdf resume to a parser that fills a form that is sent to a SQL
 database. When finished, this app should fill the web page with the content that was gathered with GET request from the database via Node.js.
 
-This is also my first practise project with React.
 
 ## Current state
 
 The page content is loaded from a JSON file that is recieved with a GET request from https://cv-pages-backend.herokuapp.com/alldata .
 
 Backend: node.js with postgresql database, deployed with heroku.
+
+To do:
+An app for the user to post/delete data from the sql server.
 
 -----------------------------------------
 
