@@ -9,7 +9,7 @@ This is also my first practise project with React.
 
 ## Current state
 
-The page content is loaded from a JSON file that is recieved with a GET request from https://cv-pages-backend.herokuapp.com/alldat .
+The page content is loaded from a JSON file that is recieved with a GET request from https://cv-pages-backend.herokuapp.com/alldata .
 
 Backend: node.js with postgresql database, deployed with heroku.
 
